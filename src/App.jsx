@@ -47,7 +47,6 @@ const App = () => {
       <Content parts={course.parts} />
       <Total parts={course.parts} />
 
-
     <h2>Counter</h2>
     <Display counter={counter} />
     <Button onClick= {incrementByOne} text='plus'/>
