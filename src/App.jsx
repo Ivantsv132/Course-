@@ -10,7 +10,7 @@ const App = () => {
 
   const Display =(props)=>{
   return( 
-  <div>{props.value}</div>
+  <div>{props.counter}</div>
   )
 }
 
@@ -31,14 +31,15 @@ const App = () => {
 
 
     <h2>Counter</h2>
-    <div>{counter}</div>
+    <div>
+      <Display counter={counter} />
     <button onClick= {incrementByOne}> 
       plus
       </button>
       <button onClick={setToZero}>
       zero
       </button>
-
+      </div>
   </div>
 
 )
