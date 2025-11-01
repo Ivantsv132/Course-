@@ -40,18 +40,9 @@ const App = () => {
 
     <h2>Counter</h2>
     <Display counter={counter} />
-    <Button 
-      onClick= {incrementByOne}
-      text='plus'
-      />
-      <Button 
-      onClick={setToZero}
-      text='zero'
-      />
-      <Button
-      onClick={decrementByOne}
-      text='minus'
-      />
+    <Button onClick= {incrementByOne} text='plus'/>
+    <Button onClick={setToZero} text='zero' />
+    <Button onClick={decrementByOne} text='minus'/>
   </div>
 
 )
