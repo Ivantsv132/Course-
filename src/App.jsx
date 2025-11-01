@@ -19,18 +19,13 @@ const App = () => {
     setCounter(0)
   }
 
-  const Display =(counter)=>{<div>{counter}</div>
+  const Display =({counter})=><div>{counter}</div>
 
-
-}
-
- const Button = (props) => {
-  return (
-  <button onClick={props.onClick}>
-    {props.text}
+ const Button = ({onClick, text}) => (
+  <button onClick={onClick}>
+    {text}
   </button>
 ) 
-}
 
   const course = {
     name: 'Half Stack application development',
