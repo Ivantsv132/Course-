@@ -19,11 +19,11 @@ const App = () => {
     setCounter(0)
   }
 
-  const Display =(props)=>{
-  return( 
-  <div>{props.counter}</div>
-  )
+  const Display =(counter)=>{<div>{counter}</div>
+
+
 }
+
  const Button = (props) => {
   return (
   <button onClick={props.onClick}>
