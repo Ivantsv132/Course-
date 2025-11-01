@@ -5,6 +5,9 @@ import Total from './components/Total'
 
 const App = () => {
   const [counter, setCounter] = useState(0)
+  const incrementByOne = () => setCounter(counter + 1)
+  const setToZero = () => setCounter(0)
+
   const course = {
     name: 'Half Stack application development',
     parts: [
@@ -23,12 +26,13 @@ const App = () => {
 
     <h2>Counter</h2>
     <div>{counter}</div>
-    <button onClick= {() => setCounter(counter + 1)}> 
+    <button onClick= {incrementByOne}> 
       plus
       </button>
-      <button onClick={()=> setCounter(0)}>
+      <button onClick={setToZero}>
       zero
       </button>
+
   </div>
 
 )
