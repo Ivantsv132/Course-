@@ -6,6 +6,7 @@ import Total from './components/Total'
 const App = () => {
   const [counter, setCounter] = useState(0)
   const incrementByOne = () => setCounter(counter + 1)
+  const decrementByOne = () => setCounter(counter - 1)
   const setToZero = () => setCounter(0)
 
   const Display =(props)=>{
@@ -38,23 +39,23 @@ const App = () => {
 
 
     <h2>Counter</h2>
-    <div>
-      <Display counter={counter} />
-    <button onClick= {incrementByOne}> 
-      plus
-      </button>
-      <button onClick={setToZero}>
-      zero
-      </button>
-      </div>
+    <Display counter={counter} />
+    <Button 
+      onClick= {incrementByOne}
+      text='plus'
+      />
+      <Button 
+      onClick={setToZero}
+      text='zero'
+      />
+      <Button
+      onClick={decrementByOne}
+      text='minus'
+      />
   </div>
 
 )
 
-
-
-}
-
+} 
 export default App
-
 
