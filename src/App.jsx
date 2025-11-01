@@ -1,8 +1,10 @@
+import { useState } from 'react'
 import Header from './components/Header'
 import Content from './components/Content'
 import Total from './components/Total'
 
 const App = () => {
+  const [counter, setCounter] = useState(0)
   const course = {
     name: 'Half Stack application development',
     parts: [
@@ -17,20 +19,22 @@ const App = () => {
       <Header course={course.name} />
       <Content parts={course.parts} />
       <Total parts={course.parts} />
-    </div>
-  )
 
-const [ counter, setcounter] = useState(0)
-return (
-  <div>
-    <p>{counter}</p>
-    <button onClick= {() => console.log('clicked')}> 
+
+    <h2>Counter</h2>
+    <div>{counter}</div>
+    <button onClick= {() => setCounter(counter + 1)}> 
       plus
       </button>
+      <button onClick={()=> setCounter(0)}>
+      zero
+      </button>
   </div>
+
 )
 
 }
 
 export default App
+
 
