@@ -20,19 +20,15 @@ const App = () => {
     </div>
   )
 
-const [ counter, setcounter] = useState(0);
-const handleClick = () => {
-  console.log('clicked')
-}
+const [ counter, setcounter] = useState(0)
 return (
   <div>
     <p>{counter}</p>
-    <button onClick={handleClick}>
+    <button onClick= {() => console.log('clicked')}> 
       plus
       </button>
   </div>
 )
-
 
 }
 
