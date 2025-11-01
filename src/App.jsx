@@ -5,9 +5,19 @@ import Total from './components/Total'
 
 const App = () => {
   const [counter, setCounter] = useState(0)
-  const incrementByOne = () => setCounter(counter + 1)
-  const decrementByOne = () => setCounter(counter - 1)
-  const setToZero = () => setCounter(0)
+
+  console.log('rendering with counter value', counter)
+  const incrementByOne = () => {console.log('increasting, value before',counter)
+    setCounter(counter + 1)
+  }
+  const decrementByOne = () => {console.log('decreasting, value before',counter)
+    setCounter(counter - 1)
+  }
+
+  const setToZero = () => {
+    console.log('resetting to zero, value before',counter)
+    setCounter(0)
+  }
 
   const Display =(props)=>{
   return( 
