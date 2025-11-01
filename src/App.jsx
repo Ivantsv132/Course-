@@ -8,6 +8,12 @@ const App = () => {
   const incrementByOne = () => setCounter(counter + 1)
   const setToZero = () => setCounter(0)
 
+  const Display =(props)=>{
+  return( 
+  <div>{props.value}</div>
+  )
+}
+
   const course = {
     name: 'Half Stack application development',
     parts: [
@@ -36,6 +42,8 @@ const App = () => {
   </div>
 
 )
+
+
 
 }
 
