@@ -19,6 +19,21 @@ const App = () => {
       <Total parts={course.parts} />
     </div>
   )
+
+const [ counter, setcounter] = useState(0);
+const handleClick = () => {
+  console.log('clicked')
+}
+return (
+  <div>
+    <p>{counter}</p>
+    <button onClick={handleClick}>
+      plus
+      </button>
+  </div>
+)
+
+
 }
 
 export default App
